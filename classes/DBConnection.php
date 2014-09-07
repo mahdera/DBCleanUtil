@@ -64,7 +64,8 @@ class DBConnection {//make sure the server doesnot have a password and the user 
         $dbConnection = $this->connect();        
         mysql_select_db($databaseName, $dbConnection);
         $result = mysql_query($query);
-        return $result;
+        $rc = mysql_affected_rows();
+        return $rc;
     }
 
     public function readFromDatabase($query){    	  

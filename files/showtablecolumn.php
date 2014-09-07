@@ -82,7 +82,7 @@
                 var dataString = "checkValues="+checkValues+"&username="+username+
                         "&password="+password+"&host="+host+"&database="+database+
                         "&table="+table;
-                $('#dataEntryFormDiv').load('showupdatedataentryform.php?'+dataString);
+                $('#dataEntryFormDiv').load('files/showupdatedataentryform.php?'+dataString);
             }else{
                 alert('Please select the column(s) you want to modifiy!');
             }
